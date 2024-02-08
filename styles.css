@@ -11,7 +11,7 @@ body {
 .calculator-grid{
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     min-height: 100vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
@@ -23,4 +23,6 @@ body {
     outline: none;
     background-color: rgba(255, 255, 255 , .75);
 }
-.calculator-grid > button
+.calculator-grid > button:hover{
+    background-color: rgba(255, 255, 255, .9);
+}
