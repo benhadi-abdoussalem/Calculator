@@ -1,7 +1,26 @@
 class Calculator {
-    constructor (previousOperandTextElement, currentOperandTextElement)
+    constructor (previousOperandTextElement, currentOperandTextElement){
+        this.previousOperandTextElement = previousOperandTextElement
+        this.currentOperandTextElement = currentOperandTextElement
+    }
+    clear(){
 
+    }
+    delete(){
 
+    }
+    appendNumber(number){
+
+    }
+    chooseOperation(operation){
+
+    }
+    compute(){
+
+    }
+    updateDisplay(){
+
+    }
 }
 
 
