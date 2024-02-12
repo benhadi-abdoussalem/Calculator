@@ -11,7 +11,8 @@ class Calculator {
   }
   delete() {}
   appendNumber(number) {
-    this.currentOperand = this.currentOperand.tostring() + number.toString();
+    if (number === "." && this.currentOperand.includes(".")) return;
+    this.currentOperand = this.currentOperand.toString() + number.toString();
   }
   chooseOperation(operation) {}
   compute() {}
