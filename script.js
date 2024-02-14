@@ -23,7 +23,9 @@ class Calculator {
     this.previousOperand = this.currentOperand;
     this.currentOperand = "";
   }
-  compute() {}
+  compute() {
+    
+  }
   updateDisplay() {
     this.currentOperandTextElement.innerText = this.currentOperand;
     this.previousOperandTextElement.innerText = this.previousOperand;
@@ -57,4 +59,8 @@ operationButtons.forEach((button) => {
     calculator.chooseOperation(button.innerText);
     calculator.updateDisplay();
   });
+});
+equalsButton.addEventListener("click", ()=> {
+  calculator.compute();
+  calculator.updateDisplay();
 });
