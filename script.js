@@ -15,6 +15,10 @@ class Calculator {
     this.currentOperand = this.currentOperand.toString() + number.toString();
   }
   chooseOperation(operation) {
+    if (this.currentOperation === "") return;
+    if (this.previousOperand !== "") {
+      this.compute();
+    }
     this.operation = operation;
     this.previousOperand = this.currentOperand;
     this.currentOperand = "";
